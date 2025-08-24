@@ -216,43 +216,38 @@
 
   <!-- FAQ Section -->
   <section id="faq" class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h3>Do you provide food during treks?</h3>
-      <p>Yes, we provide meals, snacks, and drinking water on all treks, except the free Sunday trek in Jodhpur (as it’s
-        only 3–4 hours long). For that, please carry your own water bottle.</p>
-    </div>
+  <h2>Frequently Asked Questions</h2>
 
-    <div class="faq-item">
-      <h3>Where do Sunday treks start in Jodhpur?</h3>
-      <p>The starting point is announced on our Instagram stories every week. Make sure to check them a day before and
-        arrive on time.</p>
-    </div>
+  <div class="faq-item">
+    <h3 class="faq-question">Do you provide food during treks?</h3>
+    <p class="faq-answer">Yes, we provide meals, snacks, and drinking water on all treks, except the free Sunday trek in Jodhpur (as it’s only 3–4 hours long). For that, please carry your own water bottle.</p>
+  </div>
 
-    <div class="faq-item">
-      <h3>What should I carry on a trek?</h3>
-      <p>Carry a small backpack with water, sports shoes, a cap/hat, sunscreen, and personal medicines. For multi-day
-        treks, a detailed packing list will be shared.</p>
-    </div>
+  <div class="faq-item">
+    <h3 class="faq-question">Where do Sunday treks start in Jodhpur?</h3>
+    <p class="faq-answer">The starting point is announced on our Instagram stories every week. Make sure to check them a day before and arrive on time.</p>
+  </div>
 
-    <div class="faq-item">
-      <h3>How do I book a trek?</h3>
-      <p>You can book a trek by clicking on the <strong>Book Now</strong> button under each trip. You’ll be redirected
-        to our Instagram DM or WhatsApp to confirm your slot.</p>
-    </div>
+  <div class="faq-item">
+    <h3 class="faq-question">What should I carry on a trek?</h3>
+    <p class="faq-answer">Carry a small backpack with water, sports shoes, a cap/hat, sunscreen, and personal medicines. For multi-day treks, a detailed packing list will be shared.</p>
+  </div>
 
-    <div class="faq-item">
-      <h3>Are treks safe for beginners?</h3>
-      <p>Yes, most of our single-day treks in Jodhpur (like Goram Ghat, Bheel Beri Waterfall, Jawai) are
-        beginner-friendly. Our guides ensure safety and support throughout.</p>
-    </div>
+  <div class="faq-item">
+    <h3 class="faq-question">How do I book a trek?</h3>
+    <p class="faq-answer">You can book a trek by clicking on the <strong>Book Now</strong> button under each trip. You’ll be redirected to our Instagram DM or WhatsApp to confirm your slot.</p>
+  </div>
 
-    <div class="faq-item">
-      <h3>Do you arrange transport?</h3>
-      <p>Yes, transport is arranged for longer treks like Kedarkantha, Kedarnath, and Har Ki Dun. For local Jodhpur
-        treks, transport is usually not included but can be managed on request.</p>
-    </div>
-  </section>
+  <div class="faq-item">
+    <h3 class="faq-question">Are treks safe for beginners?</h3>
+    <p class="faq-answer">Yes, most of our single-day treks in Jodhpur (like Goram Ghat, Bheel Beri Waterfall, Jawai) are beginner-friendly. Our guides ensure safety and support throughout.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Do you arrange transport?</h3>
+    <p class="faq-answer">Yes, transport is arranged for longer treks like Kedarkantha, Kedarnath, and Har Ki Dun. For local Jodhpur treks, transport is usually not included but can be managed on request.</p>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
@@ -275,6 +270,14 @@
     
     toggleBtn.addEventListener('click', () => {
       navLinks.classList.toggle('active');
+    });
+
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
     });
   </script>
 
