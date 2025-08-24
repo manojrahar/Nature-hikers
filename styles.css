@@ -396,6 +396,38 @@ body {
   line-height: 1.5;
 }
 
+.faq-answer {
+  display: none;
+  margin-top: 8px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-question {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 1.1rem;
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+  content: "-";
+}
+
 /* FOOTER */
 footer {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
