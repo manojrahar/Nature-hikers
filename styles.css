@@ -65,6 +65,13 @@ body {
   color: #fff;
 }
 
+.logo-text a{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Hamburger button */
 .menu-toggle {
   display: none;
